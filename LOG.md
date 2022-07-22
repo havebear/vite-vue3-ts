@@ -10,7 +10,13 @@ yarn create vite project-name --template vue-ts
 
 ## 集成 pinia
 
-新建 src/store/index.ts
+安装
+
+``` cmd
+yarn add pinia
+```
+
+src/store/index.ts
 
 ``` ts
 import { createPinia } from 'pinia'
@@ -66,4 +72,58 @@ const updateName = () => {
   userStore.updateName('李四')
 }
 </script>
+```
+
+## 集成 vue-router4
+
+安装
+
+``` cmd
+yarn add vue-route
+```
+
+src/router/index.ts
+
+``` ts
+import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
+
+const routes: Array<RouteRecordRaw> = [
+  {
+    path: '/login',
+    name: 'Login',
+    meta: {
+      title: '登录',
+      keepAlive: false,
+      requireAuth: false
+    },
+    component: () => import('@/views/login/index.vue')
+  },
+  {
+    path: '/',
+    name: 'Home',
+    meta: {
+      title: '首页',
+      keepAlive: false,
+      requireAuth: false
+    },
+    component: () => import('@/views/home/index.vue')
+  }
+]
+
+const router = createRouter({
+  history: createWebHistory(),
+  routes
+})
+
+export default router
+
+```
+
+src/App.vue
+
+```
+<template>
+  <router-view />
+</template>
+
 ```
