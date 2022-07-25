@@ -20,6 +20,16 @@ const routes: Array<RouteRecordRaw> = [
       requireAuth: false
     },
     component: () => import('@/views/home/index.vue')
+  },
+  {
+    path: '/demo/vueuse',
+    name: 'VueUse',
+    meta: {
+      title: 'VueUse',
+      keepAlive: false,
+      requireAuth: false
+    },
+    component: () => import('@/views/demo/VueUse.vue')
   }
 ]
 
