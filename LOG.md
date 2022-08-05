@@ -155,3 +155,9 @@ const { x, y } = useMouse()
 
 </style>
 ```
+
+## 集成 axios
+
+``` cmd
+pnpm i axios
+```
