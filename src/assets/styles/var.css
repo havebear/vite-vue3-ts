@@ -1,0 +1,10 @@
+:root {
+  --main-color: #1890ff;
+  --main-bg-color: #ffffff;
+  --panel-bg-color: #f5f6f7;
+}
+
+.dark {
+  --main-bg-color: #242424;
+  --panel-bg-color: #353535;
+}

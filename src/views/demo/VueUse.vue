@@ -14,7 +14,6 @@
 </template>
 
 <script setup lang="ts">
-import { defineComponent } from 'vue'
 import { useMouse } from '@vueuse/core'
 
 const { x, y } = useMouse()

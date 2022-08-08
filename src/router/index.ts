@@ -25,11 +25,21 @@ const routes: Array<RouteRecordRaw> = [
     path: '/demo/vueuse',
     name: 'VueUse',
     meta: {
-      title: 'VueUse',
+      title: '切换主题',
       keepAlive: false,
       requireAuth: false
     },
     component: () => import('@/views/demo/VueUse.vue')
+  },
+  {
+    path: '/demo/change-theme',
+    name: 'ChangeTheme',
+    meta: {
+      title: 'VueUse',
+      keepAlive: false,
+      requireAuth: false
+    },
+    component: () => import('@/views/demo/ChangeTheme.vue')
   }
 ]
 

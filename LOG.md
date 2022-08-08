@@ -161,3 +161,5 @@ const { x, y } = useMouse()
 ``` cmd
 pnpm i axios
 ```
+
+## 集成 Less，配置全局变量
