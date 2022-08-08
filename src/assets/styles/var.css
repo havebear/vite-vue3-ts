@@ -2,9 +2,15 @@
   --main-color: #1890ff;
   --main-bg-color: #ffffff;
   --panel-bg-color: #f5f6f7;
+  --font-main-color: #353535;
+  --font-info-color: #666666;
+  --font-light-color: #afafaf;
 }
 
 .dark {
   --main-bg-color: #242424;
   --panel-bg-color: #353535;
+  --font-main-color: #f5f6f7;
+  --font-info-color: #e5e6e7;
+  --font-light-color: #d5d6d7;
 }
