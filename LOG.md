@@ -163,3 +163,19 @@ pnpm i axios
 ```
 
 ## 集成 Less，配置全局变量
+
+## 集成页面加载动画
+
+``` cmd
+yarn add nprogress
+yarn add @types/nprogress -D
+```
+
+## 集成 Lodash
+
+[Lodash和LodashES的区别](https://www.zhihu.com/question/460254104)
+
+``` cmd
+yarn add lodash
+yarn add @types/lodash-es -D
+```

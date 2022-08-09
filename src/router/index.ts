@@ -52,6 +52,16 @@ const routes: Array<RouteRecordRaw> = [
       requireAuth: false
     },
     component: () => import('@/views/demo/ChangeTheme.vue')
+  },
+  {
+    path: '/demo/lodash',
+    name: 'Lodash',
+    meta: {
+      title: 'Lodash',
+      keepAlive: false,
+      requireAuth: false
+    },
+    component: () => import('@/views/demo/Lodash.vue')
   }
 ]
 
