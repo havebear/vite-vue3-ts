@@ -179,3 +179,16 @@ yarn add @types/nprogress -D
 yarn add lodash
 yarn add @types/lodash-es -D
 ```
+
+``` js
+import { groupBy } from 'lodash-es'
+
+const objArr = [
+  { time: '2022-08-09', b: 1 },
+  { time: '2022-08-09', b: 2 },
+  { time: '2022-08-10', b: 3 }
+]
+const objArr2 = groupBy(objArr, 'time')
+
+{ "2022-08-09": [ { "time": "2022-08-09", "b": 1 }, { "time": "2022-08-09", "b": 2 } ], "2022-08-10": [ { "time": "2022-08-10", "b": 3 } ] }
+```
