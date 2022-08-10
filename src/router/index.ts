@@ -62,6 +62,16 @@ const routes: Array<RouteRecordRaw> = [
       requireAuth: false
     },
     component: () => import('@/views/demo/Lodash.vue')
+  },
+  {
+    path: '/demo/antd',
+    name: 'Antd',
+    meta: {
+      title: 'Antd',
+      keepAlive: false,
+      requireAuth: false
+    },
+    component: () => import('@/views/demo/Antd.vue')
   }
 ]
 
